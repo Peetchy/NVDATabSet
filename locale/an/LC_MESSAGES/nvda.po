@@ -1,0 +1,64 @@
+# Unicode braille input
+# Copyright (C) YEAR THE NVDA'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the NVDA package.
+# Jorge Pérez Pérez <jorgtum@gmial.com>, 2013
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: unicodeBrailleInput 1.0.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2013-03-03 12:18+0100\n"
+"PO-Revision-Date: 2016-02-25 22:54-0800\n"
+"Last-Translator: Jorge Pérez Pérez <jorgtum@gmail.com>\n"
+"Language-Team: SoftAragonés <softaragones@googlegroups.com>\n"
+"Language: an\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+
+#. Translators: name of menu item.
+msgid "Un&icode Braille Input..."
+msgstr "Dentrada Un&icode Braille..."
+
+#. Translators: menu item tool tip text.
+#. Translators: Message presented when user performs input help for this shortcut.
+msgid "Displays a dialog to enter braille in numeric form."
+msgstr "Amuestra un dialogo ta meter braille de traza numerica."
+
+#. Translators: Error message displayed when the user enters invalid input.
+#, python-format
+msgid "Unexpected input: '%s', only dots 0 to 8 and - are allowed."
+msgstr ""
+"Dentrada inasperada : '%s', Nomás se permiten os puntos dende o 0 dica lo 8 "
+"y guions."
+
+#. Translators: The title of the dialog.
+msgid "Convert Braille to Unicode"
+msgstr "Convertir braille en Unicode"
+
+#. Translators: the label of the edit field.
+msgid "Enter text in numeric braille:"
+msgstr "Introduz o texto en braille numerico:"
+
+#. Translators: Label for a checkbox, wether to use a regular space or the Braille unicode space.
+msgid "Convert Unicode Braille space to ASCII space"
+msgstr "Convierte o espacio braille Unicode ta espacio ASCII"
+
+#. Translators: This is the message when unicode text has been copied to the clipboard.
+msgid "Unicode text copied to clipboard ready for you to paste."
+msgstr "O texto Unicode copiau en o portafuellas ye parau ta apegar-ne."
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "Unicode Braille Input"
+msgstr "Dentrada braille Unicode"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid ""
+"Displays a text field to type numeric braille (e.g. 1345-1236-145-1) and "
+"converts it into unicode braille characters."
+msgstr ""
+"Amuestra un campo de texto ta tecliar braille numerico (eix.: "
+"1345-1236-145-1) y lo convierte en caracters de braille unicode."

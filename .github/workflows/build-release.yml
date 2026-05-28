@@ -1,0 +1,62 @@
+name: Build and release NVDA add-on
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    tags:
+      - "v*"
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Syntax check
+        shell: pwsh
+        run: |
+          $env:PYTHONDONTWRITEBYTECODE = "1"
+          python -m py_compile `
+            globalPlugins\tabset\__init__.py `
+            globalPlugins\tabset\seting.py `
+            globalPlugins\tabset\tabset.py `
+            globalPlugins\tabset\tabset_impl.py
+
+      - name: Build add-on
+        shell: pwsh
+        run: |
+          $channel = "dev"
+          if ("${{ github.ref_type }}" -eq "tag") {
+            $channel = "stable"
+          }
+          python scripts\build_addon.py `
+            --channel $channel `
+            --url "https://github.com/${{ github.repository }}"
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nvda-tabset-addon
+          path: dist/*.nvda-addon
+
+      - name: Publish GitHub release
+        if: github.ref_type == 'tag'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.nvda-addon
+          generate_release_notes: true
+
