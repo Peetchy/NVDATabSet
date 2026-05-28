@@ -73,7 +73,7 @@ After the repository exists, update `url` in `manifest.ini` to the repository UR
 Create and push a version tag:
 
 ```powershell
-git tag v2026.5.28
+git tag v2026.5.1
 git push origin main --tags
 ```
 
