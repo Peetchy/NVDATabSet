@@ -1,0 +1,31 @@
+{
+  "addonId": "NVDATabSet",
+  "addonVersionNumber": {
+    "major": 2026,
+    "minor": 5,
+    "patch": 1
+  },
+  "addonVersionName": "2026.5.1",
+  "displayName": "NVDA TabSet",
+  "publisher": "Itsawat Banlawanich",
+  "description": "NVDA TabSet lets NVDA users quickly check Thailand Stock Exchange (SET) stock data without leaving the keyboard. Toggle TabSet mode with NVDA+Alt+T, press a configured favorite key to fetch a stock quote, and hear the result through NVDA speech. The add-on can report current price details such as last price, change, prior, open, high, low, and last update time, or factsheet details such as P/E, P/BV, market cap, and dividend yield when available from set.or.th. Favorite stock symbols, result language, display mode, and clipboard copying can be configured from the NVDA Settings dialog.",
+  "homepage": "https://github.com/Peetchy/NVDATabSet",
+  "minNVDAVersion": {
+    "major": 2025,
+    "minor": 3,
+    "patch": 0
+  },
+  "lastTestedVersion": {
+    "major": 2026,
+    "minor": 1,
+    "patch": 1
+  },
+  "channel": "stable",
+  "URL": "https://github.com/Peetchy/NVDATabSet/releases/download/v2026.5.1/NVDATabSet-2026.5.1.nvda-addon",
+  "sha256": "7A8E0E938AE90ECCE176AD806BF81D7E35BA33272870A1A0F4B71B1DB20D1633",
+  "sourceURL": "https://github.com/Peetchy/NVDATabSet",
+  "license": "GPL v2",
+  "licenseURL": "https://github.com/Peetchy/NVDATabSet/blob/main/LICENSE",
+  "changelog": "* Updated for NVDA 2025.3 and later.\n* Updated SET stock price and factsheet parsing for the current set.or.th pages.\n* Expanded add-on metadata and documentation to describe TabSet features, usage, settings, and update behavior.",
+  "translations": []
+}

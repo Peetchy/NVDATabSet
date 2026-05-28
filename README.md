@@ -83,4 +83,18 @@ The GitHub workflow builds `*.nvda-addon` and attaches it to the GitHub release.
 
 NVDA automatic add-on updates are provided through the NVDA Add-on Store. The manifest uses `updateChannel = stable`, and the release workflow packages tagged releases as stable builds.
 
-To make users receive update notifications inside NVDA, submit each release to the NVDA Add-on Store through `nvaccess/addon-datastore`. Users can still manually update by downloading the `*.nvda-addon` file from GitHub Releases.
+To make users receive update notifications inside NVDA, each release must be submitted to the NVDA Add-on Store through `nvaccess/addon-datastore`. GitHub Releases alone support manual downloads, but they do not make NVDA automatically notify users about add-on updates.
+
+Prepared Add-on Store submission metadata is available in:
+
+```text
+docs/addon-store-submission/NVDATabSet-2026.5.1.json
+```
+
+The Add-on Store update workflow is documented in:
+
+```text
+docs/addon-store-updates.md
+```
+
+After NVDA TabSet is accepted into the Add-on Store, users can check for updates from NVDA menu, Tools, Add-on Store. If a user installed a `.nvda-addon` file manually before store acceptance, NVDA may treat it as external; reinstalling from the Add-on Store or changing the add-on update channel to `stable` allows NVDA to use the store update path.
