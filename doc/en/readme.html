@@ -10,6 +10,41 @@
 <body>
 <h1>NVDA Tab Set</h1>
 <h2>Introduction</h2>
-<p></p>
+<p>NVDA TabSet is an NVDA add-on for checking Thailand Stock Exchange (SET) stock prices and stock factsheet information from set.or.th without leaving the keyboard.</p>
+<p>The add-on adds a temporary TabSet mode for fast stock lookup. When the mode is enabled, each configured favorite key fetches the stock symbol assigned to that key and reports the result with NVDA speech. Results can also be copied to the clipboard.</p>
+<h2>Features</h2>
+<ul>
+<li>Keyboard-driven stock lookup mode toggled with NVDA+Alt+T.</li>
+<li>Favorite stock shortcuts for letters, numbers, and common punctuation keys.</li>
+<li>Price view with company name, last price, change, change percentage, prior, open, high, low, and last update time.</li>
+<li>Factsheet view with company name, P/E, P/BV, market cap, and dividend yield when available from SET.</li>
+<li>English or Thai label selection from the settings panel.</li>
+<li>Optional automatic copy of stock information to the clipboard.</li>
+<li>Sound feedback for start, loading, completion, failure, and close events.</li>
+<li>NVDA Settings panel for editing favorite symbols and display options.</li>
+</ul>
+<h2>Usage</h2>
+<ul>
+<li>Press NVDA+Alt+T to enable TabSet mode.</li>
+<li>Press a configured favorite key to fetch stock data.</li>
+<li>Press = while TabSet mode is enabled to open NVDA TabSet settings.</li>
+<li>Press Escape while TabSet mode is enabled to close TabSet mode.</li>
+</ul>
+<h2>Settings</h2>
+<p>Open the NVDA TabSet settings panel from NVDA Settings, or press = while TabSet mode is enabled.</p>
+<ul>
+<li>Edit favorite stock symbols assigned to shortcut keys.</li>
+<li>Choose whether shortcuts report stock price data or stock factsheet data.</li>
+<li>Choose English or Thai labels for reported fields.</li>
+<li>Enable or disable copying result text to the clipboard.</li>
+</ul>
+<h2>Data Source</h2>
+<p>NVDA TabSet fetches public stock quote and factsheet pages from set.or.th. The SET website can change its page structure or omit some fields for a symbol. When a field is unavailable, the add-on leaves that field blank rather than blocking the lookup.</p>
+<h2>Compatibility</h2>
+<ul>
+<li>Minimum NVDA version: 2025.3.0</li>
+<li>Last tested NVDA version: 2026.1.1</li>
+<li>Update channel: stable</li>
+</ul>
 </body>
 </html>
